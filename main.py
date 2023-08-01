@@ -24,8 +24,8 @@ for index, row in birthday_df.iterrows():
             content = content.replace("[NAME]", row['name'])
 
         # 3. Send the letter generated in step 3 to that person's email address.
-        my_email = "codersinfinite@gmail.com"
-        password = "ugcoflqnywkxjysf"
+        my_email = "YOUR EMAIL"
+        password = "YOUR PASSWORD"
 
         with smtplib.SMTP("smtp.gmail.com", port=587, timeout=60) as connection:
             connection.starttls()
